@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
 
-:root{
+:root {
     --branco: #FFFFFF;
     --cor-de-fundo: #00162E;
     --fundo-senha: #00244D;
@@ -10,40 +10,40 @@
     --roboto-mono: 'Roboto Mono', monospace;
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-weight: 400;
 }
 
-body{
+body {
     color: var(--branco);
     background-color: var(--cor-de-fundo);
     font-family: var(--roboto);
 }
 
-.conteudo{
+.conteudo {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 16px;
 }
 
-.titulo-principal{
+.titulo-principal {
     font-family: var(--roboto-mono);
     font-size: 32px;
 }
 
-.titulo-secundario{
+.titulo-secundario {
     font-size: 24px;
 }
 
-.conteudo-titulo{
+.conteudo-titulo {
     text-align: center;
     margin-top: 80px;
 }
 
-.conteudo-senha{
+.conteudo-senha {
     margin-top: 40px;
     background: var(--fundo-senha);
     padding: 24px;
@@ -53,7 +53,7 @@ body{
     justify-content: space-between;
 }
 
-#campo-senha{
+#campo-senha {
     background-color: var(--fundo-senha);
     border: none;
     color: var(--branco);
@@ -62,45 +62,45 @@ body{
     width: 70%;
 }
 
-#campo-senha:focus{
+#campo-senha:focus {
     outline: none;
 }
 
-.parametro{
+.parametro {
     background-color: var(--fundo-texto);
     border: 2px solid var(--borda);
     margin-top: 32px;
     padding: 24px;
 }
 
-.parametro-titulo{
+.parametro-titulo {
     font-family: var(--roboto-mono);
     font-size: 28px;
     margin-bottom: 24px;
 }
 
-.parametro-senha__titulo{
+.parametro-senha__titulo {
     font-size: 24px;
     margin-bottom: 16px;
 }
 
-.parametro-coluna__senha{
+.parametro-coluna__senha {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-.parametro-senha{
+.parametro-senha {
     width: 100%;
 }
 
-.parametro-senha-botoes{
+.parametro-senha-botoes {
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
-.parametro-senha__botao{
+.parametro-senha__botao {
     background-color: var(--borda);
     color: var(--branco);
     border: none;
@@ -111,12 +111,12 @@ body{
     border-radius: 4px;
 }
 
-.parametro-senha__texto{
+.parametro-senha__texto {
     font-size: 24px;
     font-family: var(--roboto-mono);
 }
 
-.parametro-senha-checkbox{
+.parametro-senha-checkbox {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -124,34 +124,34 @@ body{
 }
 
 /* Indicador de força da senha */
-.barra{
+.barra {
     background-color: var(--fundo-senha);
     height: 30px;
     width: 100%;
 }
 
-.forca{
+.forca {
     height: 30px;
     position: relative;
     bottom: 30px;
 }
 
-.fraca{
+.fraca {
     width: 25%;
     background-color: #E71B32;
 }
 
-.media{
+.media {
     background-color: #FAF408;
     width: 50%;
 }
 
-.forte{
+.forte {
     background-color: #00FF85;
     width: 100%;
 }
 
-.parametro-senha-textos{
+.parametro-senha-textos {
     display: flex;
     justify-content: space-between;
     margin-top: -20px;
@@ -159,12 +159,12 @@ body{
 
 /* Responsividade para telas maiores */
 @media screen and (min-width: 768px) {
-    .parametro-coluna__senha{
+    .parametro-coluna__senha {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .parametro-senha{
+    .parametro-senha {
         width: 30%;
     }
 }

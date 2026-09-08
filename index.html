@@ -4,159 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus objetivos do ano</title>
+    <title>Gerador de senha</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <section class="conteudo-principal">
+    <section class="conteudo">
 
-        <h2 class="titulo-principal">
-            Meus desejos para 2026<span>_</span>
-        </h2>
+        <div class="conteudo-titulo">
+            <img src="unlock.svg" alt="Cadeado fechado">
+            <h2 class="titulo-principal">Gerador de senhas</h2>
+            <h3 class="titulo-secundario">
+                Gere instantaneamente uma senha aleatória e segura
+            </h3>
+        </div>
 
-        <div class="conteudo">
+        <div class="conteudo-senha">
+            <label for="campo-senha">Senha</label>
+            <input name="senha" type="text" id="campo-senha" readonly>
+        </div>
 
-            <div class="botoes">
-                <button class="botao ativo">Aproveitar a formatura</button>
-                <button class="botao">Decidir minha faculdade</button>
-                <button class="botao">Terminar o ano letivo</button>
-                <button class="botao">Aproveitar mais minha família</button>
-            </div>
+        <div class="parametro">
 
-            <div class="abas-textos">
+            <h3 class="parametro-titulo">Personalize sua senha</h3>
 
-            
-                <div class="aba-conteudo ativo">
-                    <h3 class="aba-conteudo-titulo-principal">
-                        Finalizar meu projeto com dedicação e criatividade
-                    </h3>
+            <div class="parametro-coluna__senha">
 
-                    <h4 class="aba-conteudo-titulo-secundario">
-                        Tempo para completar o objetivo
+                <!-- Número de caracteres -->
+                <div class="parametro-senha">
+
+                    <h4 class="parametro-senha__titulo">
+                        Número de caracteres
                     </h4>
 
-                    <div class="contador">
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="dias0">7</p>
-                            <p class="contador-digito-texto">dias</p>
-                        </div>
-
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="horas0">7</p>
-                            <p class="contador-digito-texto">horas</p>
-                        </div>
-
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="min0">7</p>
-                            <p class="contador-digito-texto">min</p>
-                        </div>
-
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="seg0">7</p>
-                            <p class="contador-digito-texto">seg</p>
-                        </div>
+                    <div class="parametro-senha-botoes">
+                        <button type="button" class="parametro-senha__botao">-</button>
+                        <p class="parametro-senha__texto">12</p>
+                        <button type="button" class="parametro-senha__botao">+</button>
                     </div>
+
                 </div>
 
-                
-                <div class="aba-conteudo">
-                    <h3 class="aba-conteudo-titulo-principal">
-                        Criar projetos mais interativos e melhorar minhas habilidades
-                    </h3>
+                <!-- Características da senha -->
+                <div class="parametro-senha">
 
-                    <h4 class="aba-conteudo-titulo-secundario">
-                        Tempo para completar o objetivo
+                    <h4 class="parametro-senha__titulo">
+                        Características da senha
                     </h4>
 
-                    <div class="contador">
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="dias1">7</p>
-                            <p class="contador-digito-texto">dias</p>
-                        </div>
-
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="horas1">7</p>
-                            <p class="contador-digito-texto">horas</p>
-                        </div>
-
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="min1">7</p>
-                            <p class="contador-digito-texto">min</p>
-                        </div>
-
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="seg1">7</p>
-                            <p class="contador-digito-texto">seg</p>
-                        </div>
+                    <div class="parametro-senha-checkbox">
+                        <input id="maiusculo" name="maiusculo" type="checkbox" checked>
+                        <label for="maiusculo">Letras maiúsculas</label>
                     </div>
+
+                    <div class="parametro-senha-checkbox">
+                        <input id="minusculo" name="minusculo" type="checkbox">
+                        <label for="minusculo">Letras minúsculas</label>
+                    </div>
+
+                    <div class="parametro-senha-checkbox">
+                        <input id="numero" name="numero" type="checkbox">
+                        <label for="numero">Números</label>
+                    </div>
+
+                    <div class="parametro-senha-checkbox">
+                        <input id="simbolo" name="simbolo" type="checkbox">
+                        <label for="simbolo">Símbolos</label>
+                    </div>
+
                 </div>
 
-               
-                <div class="aba-conteudo">
-                    <h3 class="aba-conteudo-titulo-principal">
-                        Equilibrar trabalho, estudos e descanso
-                    </h3>
+                <!-- Força da senha -->
+                <div class="parametro-senha">
 
-                    <h4 class="aba-conteudo-titulo-secundario">
-                        Tempo para completar o objetivo
+                    <h4 class="parametro-senha__titulo">
+                        Força da senha
                     </h4>
 
-                    <div class="contador">
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="dias2">7</p>
-                            <p class="contador-digito-texto">dias</p>
-                        </div>
+                    <div class="barra"></div>
 
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="horas2">7</p>
-                            <p class="contador-digito-texto">horas</p>
-                        </div>
+                    <div class="forca fraca"></div>
 
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="min2">7</p>
-                            <p class="contador-digito-texto">min</p>
-                        </div>
-
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="seg2">7</p>
-                            <p class="contador-digito-texto">seg</p>
-                        </div>
+                    <div class="parametro-senha-textos">
+                        <p>Fraca</p>
+                        <p>Média</p>
+                        <p>Forte</p>
                     </div>
-                </div>
 
-               
-                <div class="aba-conteudo">
-                    <h3 class="aba-conteudo-titulo-principal">
-                        Viver cada momento como se fosse o mais importante
-                    </h3>
-
-                    <h4 class="aba-conteudo-titulo-secundario">
-                        Tempo para completar o objetivo
-                    </h4>
-
-                    <div class="contador">
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="dias3">7</p>
-                            <p class="contador-digito-texto">dias</p>
-                        </div>
-
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="horas3">7</p>
-                            <p class="contador-digito-texto">horas</p>
-                        </div>
-
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="min3">7</p>
-                            <p class="contador-digito-texto">min</p>
-                        </div>
-
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="seg3">7</p>
-                            <p class="contador-digito-texto">seg</p>
-                        </div>
-                    </div>
                 </div>
 
             </div>
@@ -165,8 +100,8 @@
 
     </section>
 
+    <!-- Adicione seu arquivo JavaScript aqui -->
     <script src="main.js"></script>
-
 </body>
 
 </html>
